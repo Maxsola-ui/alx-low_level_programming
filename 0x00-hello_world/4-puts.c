@@ -1,13 +1,11 @@
 #include <stdio.h>
-
 /**
-*
-* main - Entry Point ("Programming is like building a multilingual puzzel")
-*
-* Return: Always 0 (Success)
-*/
+ * main- Serves as the entry point for the program
+ *
+ * Return: By default returns zero if no errors otherwise returns non-zero value
+ */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzel");
 	return (0);
 }
