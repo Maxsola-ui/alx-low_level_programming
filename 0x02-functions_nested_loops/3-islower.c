@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main- check the code
+ * maiin- check the code
  *
  * Return: Always 0.
  */
@@ -11,7 +11,7 @@ int main(void)
 	int n, c;
 
 	c = 0;
-	while (c <= 1)
+	while (c <= 10)
 	{
 		for (n = 'a'; n <= c; n++)
 		{
@@ -19,10 +19,7 @@ int main(void)
 		}
 
 		c++;
-		else
-		{
-			_putchar("0\n");
-		}
+
+		_putchar("0\n");
 	}
 }
-
