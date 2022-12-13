@@ -20,6 +20,6 @@ int main(void)
 
 		c++;
 
-		_putchar("0\n");
+		_putchar('\n');
 	}
 }
