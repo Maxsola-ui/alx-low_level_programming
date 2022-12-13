@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
- *  Main - check the code for the function that prints 10 times alphabets
- *
+ *  print_alphabet_x10 - check the code
  *  Return: Always 0 if there is no error.
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 	char c = 'a';
 
-	while (c <= 'z')
+	while (c >= 'z')
 	{
 		_putchar(c);
 		c++;
 	}
+
 	_putchar('\n');
-
-	print_alphabet_x10();
-	return (0);
 }
-
