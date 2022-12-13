@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * maiin- check the code
+ * _islower- check the code c
  *
  * Return: Always 0.
  */
 
-int main(void)
+int _islower(int c)
 {
 	int n, c;
 
