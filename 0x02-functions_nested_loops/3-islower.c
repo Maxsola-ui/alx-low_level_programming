@@ -8,18 +8,12 @@
 
 int _islower(int c)
 {
-	int n, c;
-
-	c = 0;
-	while (c <= 10)
+	if (c >= 'a' && c <= 'z')
 	{
-		for (n = 'a'; n <= c; n++)
-		{
-			_putchar(n);
-		}
-
-		c++;
-
-		_putchar('\n');
+		_putchar('1');
+		return (1);
 	}
+	_putchar('0');
+
+	return (0);
 }
