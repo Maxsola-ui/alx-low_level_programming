@@ -21,11 +21,14 @@ void print_times_table(int n)
 		{
 			product = (row * column);
 			if (column == 0)
+			{
 				_putchar('0' + product);
+			}
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
+			}
 				if (product <= 9)
 				{
 					_putchar(' ');
@@ -37,15 +40,13 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar('0' + (product / 10));
 					_putchar('0' + (product % 10));
-					else if (product >= 100)
-					{
-						_putchar('0' + (product / 100));
-						_putchar('0' + ((product / 10) % 10));
-						_putchar('0' + (product % 10));
-					}
 				}
-			}
-			_putchar('\n');
+				else if (product >= 100)
+				{
+					_putchar('0' + (product / 100));
+					_putchar('0' + ((product / 10) % 10));
+					_putchar('0' + (product % 10));
+				}
 		}
 	}
 }
