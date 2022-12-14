@@ -1,28 +1,4 @@
-#include <stdio.h>
-
-/**
- * numlength - returns the length of string
- * @num : operand number
- * Return: number of digits
- */
-
-int numlength(int num)
-{
-	int length = 0;
-
-	if (!num)
-	{
-		return (1);
-	}
-
-	while (num)
-	{
-		num = num / 10;
-		length += 1;
-	}
-
-	return (length);
-}
+#include <stdio.h>;
 
 /**
  *  *main - prints the first 98 fibonacci sequences
@@ -31,32 +7,17 @@ int numlength(int num)
 
 int main(void)
 {
-	unsigned long f1 = 1, f2 = 2, tmp, mx = 100000000, f1o = 0, f2o = 0, tmpo = 0;
-	short int i = 1, initial0s;
 
-	while (i <= 98)
-	{
-		if (f1o > 0)
-			printf("%lu", f1o);
-		initial0s = numlength(mx) - 1 - numlength(f1);
-		while (f1o > 0 && initail0s > 0)
-		{
-			printf("%i", 0);
-			intial0s--;
-		}
-		printf("%lu", f1);
-		tmp = (f1 + f2) % mx;
-		tmpo = f1o + f2o + (f1 + f2) / mx;
-		f1 = f2;
-		f1o = f2o;
-		f2 = tmp;
-		f2o = tmpo;
+int a = 1, b = 2;
+printf("%d, %d", a, b);
 
-		if (i != 98)
-			printf(", ");
-		else
-			printf("\n");
-		i++;
-	}
-	return (0);
+for (int i = 2; i < 98; i++)
+{
+int c = a + b;
+printf(" , %d", c);
+a = b;
+b = c;
+}
+printf('\n');
+return (0);
 }
