@@ -8,10 +8,11 @@
 
 int main(void)
 {
-	int sum = 0;
-
 	while (int i = 3; i < 1024)
 		i++;
+
+	int sum = 0;
+
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
