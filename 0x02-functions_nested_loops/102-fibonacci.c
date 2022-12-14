@@ -7,19 +7,27 @@
 
 int main(void)
 {
-	int a = 1, b = 2;
+	long int i, j, k, l;
 
-	printf("%d, %d", a, b);
+	j = 1;
+	k = 2;
 
-	for (int i = 2; i < 50; i++)
+	for (i = 1; i <= 50; ++i)
 	{
-		int c = a + b;
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		}
 
-		printf(" , %d", c);
+		else
+		{
+			printf("%ld\n", j);
+		}
 
-		a = b;
-		b = c;
+		l = j + k;
+		j = k;
+		k = l;
 	}
-	print ('\n');
+
 	return (0);
 }
