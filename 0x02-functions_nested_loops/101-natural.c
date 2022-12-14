@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,17 +9,14 @@
 
 int main(void)
 {
-	while (int i = 3; i < 1024)
-		i++;
+	int sum, num;
 
-	int sum = 0;
-
+	for (num = 0; num < 1024; ++num)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-		{
-			sum += i;
-		}
+		if ((num % 3 == 0) || (num % 5 == 0))
+			sum += num;
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }
