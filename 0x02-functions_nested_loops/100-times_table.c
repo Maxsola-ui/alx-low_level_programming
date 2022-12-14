@@ -10,6 +10,7 @@ void print_times_table(int n)
 {
 	for (int i = 0; i <= 12; i++)
 	{
-		return ("%d * %d = %d\n", n, i, n * i);
+		_putchar("%d * %d = %d\n", n, i, n * i);
 	}
+	return (0);
 }

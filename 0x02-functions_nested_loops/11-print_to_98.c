@@ -11,6 +11,7 @@ void print_to_98(int n)
 {
 	for (int i = n; i <= 98; i++)
 	{
-		return ("%d\n", i);
+		_putchar("%d\n", i);
 	}
+	return (0);
 }
