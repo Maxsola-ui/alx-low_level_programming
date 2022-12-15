@@ -2,8 +2,8 @@
 
 /**
  * _isdigit - checks for digits
- * @c: parameter
- * Return: 0 or 1
+ * @c: an integer argument
+ * Return: success
  */
 
 int _isdigit(int c)
