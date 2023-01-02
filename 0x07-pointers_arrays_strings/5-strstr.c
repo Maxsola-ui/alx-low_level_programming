@@ -3,12 +3,12 @@
 
 /**
  * _strstr - Locate and return pointer to first occurence of substring
- * @haystach: String to search
+ * @haystack: String to search
  * @needle: Target substring to search for
  * Return: Pointer to index of string at first occurence of whole substring
  */
 
-char *_strstr(char *haystach, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	int i = 0, j, x;
 
