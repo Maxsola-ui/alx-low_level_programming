@@ -3,11 +3,11 @@
 /**
  * wildcmp - Compare strings
  * @s1: Pointer to string parameter
- * @s: Pointer to string parameter
+ * @s2: Pointer to string parameter
  * Return: 0
  */
 
-int wildcmp(char *s1, char *s)
+int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == '\0')
 	{
