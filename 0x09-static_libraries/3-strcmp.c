@@ -14,7 +14,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int count, cmpVal;
 
-	counter = 0;
+	count = 0;
 	while (s1[count] == s2[count] && s1[count] != '\0')
 	{
 		count++;
