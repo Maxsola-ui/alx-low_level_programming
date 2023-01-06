@@ -10,6 +10,7 @@ do
 	# Add the name of the file to the array
 	c_files+=($file)
 done
+gcc -Wall -Wextra -Werror -pedantic -c *.c
 
 # Create the static library with the .c files
 ar rcs liball.a ${c_files[@]}
